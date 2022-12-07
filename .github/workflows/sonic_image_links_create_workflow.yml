@@ -18,5 +18,9 @@ jobs:
       - uses: actions/checkout@v2 
         
       - name: Run the script to build a json file with details about various builds for various platforms
-        run: git remote -vv
+        run: |
+          echo AA >> README.md
+          git add .
+          git commit -m fix
+          git push
 
